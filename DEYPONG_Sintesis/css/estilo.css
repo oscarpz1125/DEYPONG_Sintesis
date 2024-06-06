@@ -1,0 +1,226 @@
+
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: 'Arial', sans-serif; /* Establece la fuente a Arial con una alternativa sans-serif */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-color: #fff; /* Establece el color de fondo del cuerpo en blanco */
+}
+/* Estilos para el encabezado */
+header {
+    background-color: rgb(71, 71, 255); /* Establece el color de fondo del encabezado en un tono de azul */
+    padding: 10px 0; /* Agrega 10px de relleno arriba y abajo del encabezado */
+    color: white; /* Establece el color del texto dentro del encabezado a negro */
+    display: flex; /* Usa el modelo de caja flexible para el encabezado */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos de manera uniforme */
+    align-items: center; /* Alinea verticalmente los elementos hijos al centro */
+}
+.logo {
+    margin-left: 0%; /* Agrega un margen izquierdo de 20px al logotipo */
+}
+/* Estilos para la barra de navegación */
+.navbar ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados (puntos o números) */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina los márgenes de la lista */
+    align-items: center; /* Alinea verticalmente los elementos de la lista */
+}
+.navbar ul li {
+    position: relative; /* Establece una posición relativa para permitir el posicionamiento absoluto de elementos hijos */
+    margin: 0 15px; /* Agrega un margen horizontal de 15px a cada elemento de la lista */
+}
+.navbar ul li a, .dropbtn {
+    color: white; /* Establece el color del texto de los enlaces y el botón desplegable a negro */
+    font-weight: bold; /* Establece el texto en negrita */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px; /* Agrega un relleno de 10px alrededor de los enlaces y el botón desplegable */
+    display: block; /* Hace que los enlaces y el botón desplegable sean elementos de bloque */
+}
+/* Ocultar el checkbox */
+#dropdown-toggle {
+    display: none; /* Oculta el checkbox de la vista */
+}
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none; /* Oculta el contenido del menú desplegable por defecto */
+    position: absolute; /* Posiciona el menú desplegable de manera absoluta */
+    background-color: black; /* Establece el color de fondo del menú desplegable en blanco */
+    min-width: 160px; /* Establece un ancho mínimo de 160px para el menú desplegable */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Agrega una sombra al menú desplegable */
+    z-index: 1; /* Establece la prioridad de apilamiento del menú desplegable */
+}
+.dropdown-content li {
+    text-align: left; /* Alinea el texto a la izquierda dentro de los elementos de la lista del menú desplegable */
+}
+.dropdown-content li a {
+    color: black; /* Establece el color del texto de los enlaces dentro del menú desplegable a negro */
+    padding: 12px 16px; /* Agrega un relleno de 12px arriba y abajo y 16px a los lados a los enlaces del menú desplegable */
+    text-decoration: none; /* Elimina el subrayado de los enlaces del menú desplegable */
+    display: block; /* Hace que los enlaces dentro del menú desplegable sean elementos de bloque */
+}
+/* Mostrar el menú desplegable al hacer clic */
+#dropdown-toggle:checked + .dropbtn + .dropdown-content {
+    display: block; /* Muestra el menú desplegable cuando el checkbox está marcado */
+}
+/* Cambiar color del enlace principal al pasar el ratón */
+.navbar ul li a:hover, .dropbtn:hover {
+    background-color: rgb(0, 229, 255); /* Cambia el color de fondo del enlace o botón desplegable a un tono de cian */
+}
+p {
+    margin: 20px 20; /* Margen superior e inferior */
+    margin-right: 5%; /* Margen derecho entre elementos */
+    margin-left: 5% ;/* Margen izquierdo entre elementos */
+    color: black; /* Color del texto */
+    text-align: justify;  /* Texto justificado */
+}
+/* Contenedor principal, establece un ancho del 80%, centrado horizontalmente con un máximo de 1200px */
+.container {
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+/* Estilo del título principal, centrado horizontalmente sin margen */
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina el margen del elemento */
+}
+/* Estilo de la navegación, usando Flexbox para distribuir espacio entre los elementos */
+nav {
+    display: flex; /* Usa flexbox para el diseño del contenedor */
+    justify-content: space-between; /* Distribuye espacio entre los elementos flexibles */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+}
+/* Elimina los estilos de lista predeterminados y aplica un display flex para los elementos de la lista */
+ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+    display: flex; /* Usa flexbox para los elementos de la lista */
+}
+/* Estilo de los elementos de la lista, con un margen horizontal de 10px entre cada uno */
+ul li {
+    margin: 0 10px; /* Aplica un margen horizontal de 10px */
+}
+/* Estilo de los enlaces dentro de los elementos de la lista, en color blanco y con negrita */
+ul li a {
+    color: white; /* Color del texto blanco */
+    text-decoration: none; /* Elimina la subrayado del texto */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+/* Estilo del elemento main, con un padding vertical de 20px */
+main {
+    padding: 20px 0; /* Aplica un padding superior e inferior de 20px */
+}
+/* Estilo de las secciones dentro de main, con padding vertical y un borde inferior */
+.section {
+    padding: 20px 0; /* Aplica un padding superior e inferior de 20px */
+    border-bottom: 1px solid #ddd; /* Aplica un borde inferior gris claro */
+}
+/* Estilo de los títulos h2, con un color azul y un borde inferior */
+h1 {
+    color: rgb(71, 71, 255); /* Color del texto azul */
+    border-bottom: 2px solid rgb(71, 71, 255); /* Borde inferior azul */
+    padding-bottom: 5px; /* Padding inferior de 5px */
+}
+/* Estilo del pie de página, con un fondo azul, texto blanco, centrado y con padding */
+footer {
+    background-color: rgb(71, 71, 255); /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 10px 0; /* Padding superior e inferior de 10px */
+    margin-top: 20px; /* Margen superior de 20px */
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+/* Estilo del formulario de donación, usando flexbox en columna y centrado */
+.donation-form {
+    display: flex; /* Usa flexbox para el diseño del formulario */
+    flex-direction: column; /* Ordena los elementos en columna */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+/* Estilo de las etiquetas del formulario de donación, con margen inferior */
+.donation-form label {
+    margin: 10px 0 5px; /* Margen superior de 10px, margen inferior de 5px */
+}
+/* Estilo de los inputs del formulario de donación */
+.donation-form input {
+    padding: 10px; /* Padding de 10px */
+    border: 1px solid #ccc; /* Borde de 1px sólido gris claro */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    margin-bottom: 10px; /* Margen inferior de 10px */
+}
+/* Estilo del botón del formulario de donación */
+.donation-form button {
+    padding: 10px; /* Padding de 10px */
+    background-color: rgb(71, 71, 255); /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+}
+/* Estilo del botón del formulario de donación al pasar el mouse */
+.donation-form button:hover {
+    background-color: rgb(71, 71, 255); /* Color de fondo azul (sin cambios) */
+}
+/* Estilo de las imágenes, centradas y con tamaño ajustado */
+img {
+    width: 50%; /* Ancho del 50% del contenedor padre */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-top: 20px; /* Margen superior de 20px */
+    display: block; /* Display block para eliminar el espacio inferior */
+    margin: 5px auto; /* Márgenes superior e inferior de 20px, centrado horizontalmente */
+    max-width: 100%; /* Ancho máximo del 100% del contenedor padre */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+/* Estilo de listas ordenadas y desordenadas */
+ol, ul {
+    margin: 20px 20; /* Margen superior e inferior de 20px */
+    margin-right: 5%; /* Margen derecho del 5% */
+    margin-left: 5%; /* Margen izquierdo del 5% */
+    text-align: justify; /* Texto justificado */
+}
+/* Estilo de los elementos de lista */
+li {
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+/* Contenedor para filas con flexbox */
+.row {
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    display: flex; /* Usa flexbox para el diseño de las filas */
+}
+/* Contenedor para columnas con flexbox */
+.col2 {
+    width: 50%; /* Ancho del 50% del contenedor padre */
+    text-align: justify; /* Texto justificado */
+    align-content: space-around; /* Distribuye el contenido alrededor */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+
+    margin-left: 5% ;/* Margen izquierdo entre elementos */
+}
+/* Contenedor para tres columnas de imágenes */
+.row3 {
+    display: flex; /* Usa flexbox para el diseño de las filas */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+}
+/* Estilo de las columnas individuales en la fila de tres imágenes */
+.col3 {
+    flex: 1; /* Cada columna toma una fracción igual del espacio disponible */
+    margin: 2px; /* Margen de 2px alrededor de cada columna */
+    text-align: center; /* Texto centrado */
+}
+.logo img {
+    width: 20%;
+}
+/* Media Query para dispositivos con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+    .col2, .row, .col2 img, .col2 p, .row3, .col3 {
+        width: 90%;
+        flex-direction: column;
+    }
+
+}
